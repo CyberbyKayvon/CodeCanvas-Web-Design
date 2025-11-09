@@ -1,16 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <!-- Background circle -->
-  <circle cx="50" cy="50" r="48" fill="#1a1d29"/>
+  <!-- Modern gradient background -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1d29;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0c14;stop-opacity:1" />
+    </linearGradient>
+  </defs>
 
-  <!-- Laptop base (keyboard area) -->
-  <rect x="20" y="55" width="60" height="3" rx="1" fill="#00b67a"/>
+  <circle cx="50" cy="50" r="48" fill="url(#bgGrad)"/>
 
-  <!-- Laptop screen -->
-  <rect x="25" y="32" width="50" height="30" rx="2" fill="#00b67a"/>
+  <!-- Laptop stand/base (bottom) -->
+  <rect x="20" y="62" width="60" height="4" rx="2" fill="#00b67a" opacity="0.9"/>
 
-  <!-- Screen display (inner) -->
-  <rect x="28" y="35" width="44" height="24" rx="1" fill="#1a1d29"/>
+  <!-- Laptop base platform -->
+  <path d="M 15 62 L 85 62 L 80 66 L 20 66 Z" fill="#00b67a" opacity="0.7"/>
 
-  <!-- Code brackets on screen -->
-  <text x="38" y="52" font-family="monospace" font-size="14" font-weight="bold" fill="#00b67a">&lt;/&gt;</text>
+  <!-- Laptop screen frame -->
+  <rect x="23" y="30" width="54" height="36" rx="2.5" fill="#00b67a"/>
+
+  <!-- Screen inner glow -->
+  <rect x="26" y="33" width="48" height="30" rx="1.5" fill="#0d4d33" opacity="0.5"/>
+
+  <!-- Screen display -->
+  <rect x="26" y="33" width="48" height="30" rx="1.5" fill="#0a0c14"/>
+
+  <!-- Code brackets - larger and centered -->
+  <text x="50" y="52" font-family="monospace" font-size="18" font-weight="bold" fill="#00b67a" text-anchor="middle">&lt;/&gt;</text>
+
+  <!-- Subtle highlight on screen -->
+  <rect x="28" y="35" width="20" height="2" rx="1" fill="#00b67a" opacity="0.3"/>
 </svg>
