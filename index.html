@@ -269,7 +269,7 @@
       <p class="section-subtitle">A closer look at our craftsmanship</p>
 
       <div class="gallery-grid">
-        <div class="gallery-item">
+        <div class="gallery-item" onclick="openLightbox('images/webgallery1.png', 'CourtCrate - E-Commerce Platform')">
           <img src="images/webgallery1.png" alt="CourtCrate" class="gallery-image">
           <div class="gallery-overlay">
             <h3>CourtCrate</h3>
@@ -277,7 +277,7 @@
           </div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" onclick="openLightbox('images/webgallery2.png', 'Cyber by Kayvon - Personal Portfolio')">
           <img src="images/webgallery2.png" alt="Cyber by Kayvon" class="gallery-image">
           <div class="gallery-overlay">
             <h3>Cyber by Kayvon</h3>
@@ -285,7 +285,7 @@
           </div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" onclick="openLightbox('images/webgallery3.png', 'Tennis Website - Coaching Platform')">
           <img src="images/webgallery3.png" alt="Tennis Website" class="gallery-image">
           <div class="gallery-overlay">
             <h3>Tennis Website</h3>
@@ -293,7 +293,7 @@
           </div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" onclick="openLightbox('images/webgallery4.png', 'Cyber Glitches - Tech Blog')">
           <img src="images/webgallery4.png" alt="Cyber Glitches" class="gallery-image">
           <div class="gallery-overlay">
             <h3>Cyber Glitches</h3>
@@ -301,7 +301,7 @@
           </div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item" onclick="openLightbox('images/webgallery5.png', 'The Gabriella Dallas - Restaurant Website')">
           <img src="images/webgallery5.png" alt="The Gabriella Dallas" class="gallery-image">
           <div class="gallery-overlay">
             <h3>The Gabriella Dallas</h3>
@@ -414,6 +414,13 @@
       </div>
     </div>
   </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>

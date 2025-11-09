@@ -157,5 +157,50 @@ if (heroStats) {
   statsObserver.observe(heroStats);
 }
 
+// Lightbox functionality
+function openLightbox(imageSrc, caption) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+
+  lightbox.style.display = 'block';
+  lightboxImg.src = imageSrc;
+  lightboxCaption.textContent = caption;
+
+  // Prevent body scroll when lightbox is open
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  lightbox.style.display = 'none';
+
+  // Re-enable body scroll
+  document.body.style.overflow = 'auto';
+}
+
+// Close lightbox when clicking the X button
+const lightboxClose = document.querySelector('.lightbox-close');
+if (lightboxClose) {
+  lightboxClose.addEventListener('click', closeLightbox);
+}
+
+// Close lightbox when clicking outside the image
+const lightbox = document.getElementById('lightbox');
+if (lightbox) {
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+}
+
+// Close lightbox with Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeLightbox();
+  }
+});
+
 // Log page load
 console.log('CodeCanvas website loaded successfully!');
