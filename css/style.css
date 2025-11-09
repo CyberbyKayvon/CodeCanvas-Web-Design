@@ -31,6 +31,7 @@ body {
   color: var(--text);
   line-height: 1.6;
   background: var(--bg);
+  font-weight: 500;
 }
 
 .container {
@@ -49,9 +50,10 @@ body {
 
 .section-subtitle {
   text-align: center;
-  color: var(--text-light);
+  color: var(--text);
   font-size: 1.125rem;
   margin-bottom: 3rem;
+  font-weight: 500;
 }
 
 .highlight {
@@ -139,8 +141,8 @@ body {
 
 .logo-tagline {
   font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--text-light);
+  font-weight: 600;
+  color: var(--secondary);
   letter-spacing: 0.5px;
   text-transform: uppercase;
   padding-left: 1rem;
@@ -227,8 +229,9 @@ body {
 
 .hero-subtitle {
   font-size: 1.25rem;
-  color: var(--text-light);
+  color: var(--text);
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 
 .hero-buttons {
@@ -299,11 +302,13 @@ body {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--secondary);
+  font-weight: 700;
 }
 
 .service-card p {
-  color: var(--text-light);
+  color: var(--text);
   line-height: 1.7;
+  font-weight: 500;
 }
 
 /* Portfolio Section */
@@ -399,12 +404,14 @@ body {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   color: var(--secondary);
+  font-weight: 700;
 }
 
 .portfolio-info p {
-  color: var(--text-light);
+  color: var(--text);
   font-size: 0.9rem;
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .portfolio-tag {
@@ -617,8 +624,9 @@ body {
 }
 
 .plan-description {
-  color: var(--text-light);
+  color: var(--text);
   font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .plan-features {
@@ -631,6 +639,7 @@ body {
   color: var(--text);
   font-size: 0.9rem;
   border-bottom: 1px solid var(--bg-light);
+  font-weight: 500;
 }
 
 /* Contact Section */
