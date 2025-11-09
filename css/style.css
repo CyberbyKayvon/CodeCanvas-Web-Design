@@ -50,7 +50,7 @@ body {
 
 .section-subtitle {
   text-align: center;
-  color: var(--text);
+  color: var(--text-light);
   font-size: 1.125rem;
   margin-bottom: 3rem;
   font-weight: 500;
@@ -142,7 +142,7 @@ body {
 .logo-tagline {
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--secondary);
+  color: var(--text-light);
   letter-spacing: 0.5px;
   text-transform: uppercase;
   padding-left: 1rem;
@@ -229,7 +229,7 @@ body {
 
 .hero-subtitle {
   font-size: 1.25rem;
-  color: var(--text);
+  color: var(--text-light);
   margin-bottom: 2rem;
   font-weight: 500;
 }
@@ -306,7 +306,7 @@ body {
 }
 
 .service-card p {
-  color: var(--text);
+  color: var(--text-light);
   line-height: 1.7;
   font-weight: 500;
 }
@@ -408,7 +408,7 @@ body {
 }
 
 .portfolio-info p {
-  color: var(--text);
+  color: var(--text-light);
   font-size: 0.9rem;
   margin-bottom: 1rem;
   font-weight: 500;
@@ -624,7 +624,7 @@ body {
 }
 
 .plan-description {
-  color: var(--text);
+  color: var(--text-light);
   font-size: 0.95rem;
   font-weight: 500;
 }
