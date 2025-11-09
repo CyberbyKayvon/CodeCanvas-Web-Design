@@ -6,7 +6,9 @@
       "Bash(git remote add:*)",
       "Bash(git branch:*)",
       "Bash(git push:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(start index.html)",
+      "Bash(git init:*)"
     ],
     "deny": [],
     "ask": []
